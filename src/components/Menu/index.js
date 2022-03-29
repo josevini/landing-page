@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Container,
     TopNavigation,
@@ -8,13 +8,18 @@ import {
 } from './styles'
 
 const Menu = () => {
+    const [valueHidden, setValueHidden] = useState(true)
     return (
         <Container>
             <TopNavigation>
                 LOGO
-                <MenuIcon />
+                <MenuIcon
+                    onClick={() => {
+                        setValueHidden(!valueHidden)
+                    }}
+                />
             </TopNavigation>
-            <MainNavigation>
+            <MainNavigation hidden={valueHidden}>
                 <Item href="#">Sobre</Item>
                 <Item href="#">Serviços</Item>
                 <Item href="#">Contato</Item>

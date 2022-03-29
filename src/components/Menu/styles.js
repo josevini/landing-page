@@ -16,11 +16,14 @@ export const TopNavigation = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 80px;
+
+    @media(max-width: 768px) {
+        flex: 1 1;
+    }
 `
 
 export const MenuIcon = styled(Menu)`
-    width: 20px;
-    height: 20px;
+    width: 25px;
     display: none;
 
     @media(max-width: 768px) {
@@ -31,8 +34,16 @@ export const MenuIcon = styled(Menu)`
 
 export const MainNavigation = styled.ul`
     list-style: none;
+    display: flex;
     @media(max-width: 768px) {
         width: 100%;
+        display: ${props => props.hidden ? 'none' : 'flex'};
+        flex-direction: column;
+
+        > a {
+            padding: 12px;
+            margin: 10px 0;
+        }
     }
 `
 
