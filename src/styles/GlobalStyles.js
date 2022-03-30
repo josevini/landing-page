@@ -7,4 +7,8 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: arial, sans-serif;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 `
