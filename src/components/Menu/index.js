@@ -3,26 +3,37 @@ import {
     Container,
     TopNavigation,
     MainNavigation,
-    Item,
-    MenuIcon
+    CodeIcon,
+    MenuIcon,
+    MenuClose
 } from './styles'
 
 const Menu = () => {
-    const [valueHidden, setValueHidden] = useState(true)
+    const [menuVisible, setMenuVisible] = useState(false)
+
+    const toggleMenu = () => {
+        setMenuVisible(!menuVisible)
+    }
+
     return (
         <Container>
             <TopNavigation>
-                LOGO
+                <a href='.'>
+                    <CodeIcon />
+                </a>
                 <MenuIcon
-                    onClick={() => {
-                        setValueHidden(!valueHidden)
-                    }}
+                    menuVisible={menuVisible}
+                    onClick={toggleMenu}
+                />
+                <MenuClose
+                    menuVisible={menuVisible}
+                    onClick={toggleMenu}
                 />
             </TopNavigation>
-            <MainNavigation hidden={valueHidden}>
-                <Item href="#">Sobre</Item>
-                <Item href="#">Serviços</Item>
-                <Item href="#">Contato</Item>
+            <MainNavigation menuVisible={menuVisible}>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#contact">Contato</a>
             </MainNavigation>
         </Container>
     )
