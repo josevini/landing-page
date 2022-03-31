@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const SectionBase = styled.section`
     width: 100%;
-    height: 400px;
+    height: 450px;
+    position: relative;
     background-color: lightgrey;
 `
