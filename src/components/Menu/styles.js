@@ -2,15 +2,21 @@ import styled from 'styled-components'
 import { Menu, Close } from 'styled-icons/material'
 import { CodeSlash } from '@styled-icons/bootstrap'
 
-export const Container = styled.nav`
+export const Navbar = styled.nav`
     width: 100%;
-    background-color: #1d1d1d;
+    position: absolute;
+    z-index: 100;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
     color: #fff;
+
+    @media (max-width: 768px) {
+        position: relative;
+        background: rgba(36, 40, 55,1);
+    }
 `
 
 export const TopNavigation = styled.div`
@@ -36,7 +42,7 @@ export const MenuIcon = styled(Menu)`
     display: none;
 
     @media(max-width: 768px) {
-        display: ${props => props.menuVisible ? 'none' : 'block'};
+        display: block;
     }
 
 `
@@ -47,7 +53,7 @@ export const MenuClose = styled(Close)`
     display: none;
 
     @media(max-width: 768px) {
-        display: ${props => props.menuVisible ? 'block' : 'none'};
+        display: block;
     }
 `
 
@@ -56,25 +62,15 @@ export const MainNavigation = styled.ul`
     display: flex;
     > a {
         text-decoration: none;
-        display: inline-block;
-        margin: 0 10px;
-        padding: 8px;
+        display: block;
+        margin: 5px 0;
+        padding: 15px;
         color: #fff;
-        border-radius: 12px;
-        transition: 0.5s;
-        
-        &:hover {
-            background-color: #c3c3c323;
-        }
     }
 
     @media(max-width: 768px) {
         width: 100%;
         display: ${props => props.menuVisible ? 'flex' : 'none'};
         flex-direction: column;
-
-        > a {
-            margin: 10px 0;
-        }
     }
 `

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {
-    Container,
+    Navbar,
     TopNavigation,
     MainNavigation,
     CodeIcon,
@@ -16,26 +16,21 @@ const Menu = () => {
     }
 
     return (
-        <Container>
+        <Navbar>
             <TopNavigation>
                 <a href='.'>
                     <CodeIcon />
                 </a>
-                <MenuIcon
-                    menuVisible={menuVisible}
-                    onClick={toggleMenu}
-                />
-                <MenuClose
-                    menuVisible={menuVisible}
-                    onClick={toggleMenu}
-                />
+                <div onClick={toggleMenu}>
+                    {!menuVisible ? <MenuIcon/> : <MenuClose/>}
+                </div>
             </TopNavigation>
             <MainNavigation menuVisible={menuVisible}>
                 <a href="#about">Sobre</a>
                 <a href="#services">Serviços</a>
                 <a href="#contact">Contato</a>
             </MainNavigation>
-        </Container>
+        </Navbar>
     )
 }
 
