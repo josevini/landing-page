@@ -1,13 +1,16 @@
 import React from 'react'
 import Menu from '../Menu'
-import Section from '../Section'
+import Main from '../Main'
+import About from '../About'
 
 const Layout = () => {
     return (
-        <div>
+        <>
             <Menu />
-            <Section />
-        </div>
+            <Main />
+            <About id='about' />
+            <Main />
+        </>
     )
 }
 
