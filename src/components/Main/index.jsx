@@ -5,7 +5,7 @@ import {
     Content,
     Title,
     Description,
-    PcImage
+    Image
 } from './styles'
 
 const Main = () => {
@@ -17,7 +17,7 @@ const Main = () => {
                     Somos uma agência que preza muito pela qualidade e eficiência do serviço. Venha ser nosso cliente e dê um UP na sua empresa!
                 </Description>
             </Content>
-            <PcImage src={pc} />
+            <Image src={pc} />
         </Container>
     )
 }

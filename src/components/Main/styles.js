@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SectionBase } from '../Section/styles'
+import { SectionBase } from '../SectionBase/styles'
 
 export const Container = styled(SectionBase)`
     height: 600px;
@@ -22,7 +22,7 @@ export const Content = styled.section`
 `
 
 export const Title = styled.h1`
-    font-size: 2.1em;
+    font-size: 2.5em;
     line-height: 1.3em;
     margin-bottom: 0.6em;
 
@@ -39,6 +39,6 @@ export const Description = styled.p`
     }
 `
 
-export const PcImage = styled.img`
+export const Image = styled.img`
     width: max(40vw, 360px);
 `
