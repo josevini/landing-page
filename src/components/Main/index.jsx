@@ -12,9 +12,9 @@ const Main = () => {
     return (
         <Container>
             <Content>
-                <Title>Crie um site e dê vida ao seu negócio!</Title>
+                <Title>Crie um site ou app para o seu negócio!</Title>
                 <Description>
-                    Somos uma agência que preza muito pela qualidade e eficiência do serviço. Venha fazer um site com a gente e dê um UP na sua empresa!
+                    Somos uma agência que preza muito pela qualidade e eficiência do serviço. Venha ser nosso cliente e dê um UP na sua empresa!
                 </Description>
             </Content>
             <PcImage src={pc} />

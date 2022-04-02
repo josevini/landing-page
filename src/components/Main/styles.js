@@ -33,6 +33,7 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
     line-height: 1.5em;
+    margin-bottom: 0.9em;
     @media (max-width: 768px) {
         font-size: 0.9em;
     }
