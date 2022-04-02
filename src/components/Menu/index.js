@@ -28,6 +28,7 @@ const Menu = () => {
             <MainNavigation menuVisible={menuVisible}>
                 <a href="#about">Sobre</a>
                 <a href="#services">Serviços</a>
+                <a href="#reviews">Avaliações</a>
                 <a href="#contact">Contato</a>
             </MainNavigation>
         </Navbar>

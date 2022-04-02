@@ -16,6 +16,7 @@ export const Navbar = styled.nav`
     @media (max-width: 768px) {
         position: relative;
         background: rgba(36, 40, 55,1);
+        border-bottom: 1px solid #b7b7b7;
     }
 `
 
@@ -63,7 +64,6 @@ export const MainNavigation = styled.ul`
     > a {
         text-decoration: none;
         display: block;
-        margin: 5px 0;
         padding: 15px;
         color: #fff;
     }
