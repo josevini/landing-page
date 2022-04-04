@@ -1,12 +1,5 @@
 import React, { useState } from 'react'
-import {
-    Navbar,
-    TopNavigation,
-    MainNavigation,
-    CodeIcon,
-    MenuIcon,
-    MenuClose
-} from './styles'
+import { Navbar, TopNavigation, MainNavigation, CodeIcon, MenuIcon, MenuClose } from './styles'
 
 const Menu = () => {
     const [menuVisible, setMenuVisible] = useState(false)

@@ -13,7 +13,7 @@ export const Navbar = styled.nav`
     padding: 0 15px;
     color: #fff;
 
-    @media (max-width: 768px) {
+    @media (max-width: 820px) {
         position: relative;
         background: rgba(36, 40, 55,1);
         border-bottom: 1px solid #b7b7b7;
@@ -26,7 +26,7 @@ export const TopNavigation = styled.div`
     align-items: center;
     height: 80px;
     
-    @media(max-width: 768px) {
+    @media(max-width: 820px) {
         flex: 1 1;
     }
 `
@@ -42,7 +42,7 @@ export const MenuIcon = styled(Menu)`
     color: #fff;
     display: none;
 
-    @media(max-width: 768px) {
+    @media(max-width: 820px) {
         display: block;
     }
 
@@ -53,7 +53,7 @@ export const MenuClose = styled(Close)`
     color: #fff;
     display: none;
 
-    @media(max-width: 768px) {
+    @media(max-width: 820px) {
         display: block;
     }
 `
@@ -68,7 +68,7 @@ export const MainNavigation = styled.ul`
         color: #fff;
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: 820px) {
         width: 100%;
         display: ${props => props.menuVisible ? 'flex' : 'none'};
         flex-direction: column;
