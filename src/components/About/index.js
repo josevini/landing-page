@@ -1,22 +1,22 @@
 import React from 'react'
 import service from '../../assets/service.svg'
-import { AboutSection } from './styles'
+import { Container } from './styles'
 import {
     Content,
     Title,
     Description,
     Image
-} from './styles'
+} from '../SectionBase/styles'
 
 const About = ({ id }) => {
     return (
-        <AboutSection id={id}>
+        <Container id={id}>
             <Image src={service} />
             <Content>
                 <Title>Quem somos?</Title>
-                <Description>Somos uma agência que atua no ramo de desenvolvimento de softwares. Criamos websites e aplicativos com as melhores ferramentas do mercado.</Description>
+                <Description>Atuamos no ramo de desenvolvimento de softwares. Criamos websites e aplicativos com as melhores ferramentas do mercado.</Description>
             </Content>
-        </AboutSection>
+        </Container>
     )
 }
 
