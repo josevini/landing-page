@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import { SectionBase, Content } from '../SectionBase/styles'
+import { TabletMobileCombo } from '@styled-icons/entypo/TabletMobileCombo'
+import { Web } from '@styled-icons/material-rounded/Web'
+import { Chrome } from '@styled-icons/boxicons-logos/Chrome'
 
 export const Container = styled(SectionBase)`
     height: auto;
@@ -24,15 +27,29 @@ export const ServicesContent = styled(Content)`
     }
 `
 
+export const MobileIcon = styled(TabletMobileCombo)`
+    width: 1.56em;
+    color: #242837;
+`
+
+export const PageIcon = styled(Web)`
+    width: 2em;
+    color: #242837;
+`
+
+export const ChromeIcon = styled(Chrome)`
+    width: 2em;
+    color: #242837;
+`
+
 export const ServicesPost = styled.section`
     flex-basis: calc(33% - 1em);
     height: 300px;
-    border-radius: 5px;
     background-color: #F2F2F2;
-    padding: 15px;
+    padding: 0.9375em;
     color: #000;
     margin: 0.5em;
-    transition: 0.5s;
+    transition: 0.3s;
 
     &:hover {
         transform: scale(1.05);
