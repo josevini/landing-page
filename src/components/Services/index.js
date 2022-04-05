@@ -40,7 +40,7 @@ const Services = ({ id }) => {
                     <ChromeIcon />
                     <TitlePost>SEO</TitlePost>
                     <Description>
-                        Cuidamos da otimização para mecanismos de busca do seu, o deixando melhor indexado.
+                        Cuidamos da otimização para mecanismos de busca do seu site, o deixando melhor indexado.
                     </Description>
                 </ServicesPost>
             </ServicesContent>
