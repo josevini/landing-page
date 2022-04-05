@@ -1,6 +1,16 @@
 import React from 'react'
-import { Container, TextContent, ServicesContent, PageIcon, MobileIcon, ChromeIcon, ServicesPost, TitlePost } from './styles'
-import { Title, Description } from '../SectionBase/styles'
+import {
+    Container,
+    TextContent,
+    ServicesContent,
+    Title,
+    Description,
+    PageIcon,
+    MobileIcon,
+    ChromeIcon,
+    ServicesPost,
+    TitlePost
+} from './styles'
 
 const Services = ({ id }) => {
     return (
