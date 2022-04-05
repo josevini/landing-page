@@ -49,12 +49,7 @@ export const ServicesPost = styled.section`
     padding: 0.9375em;
     color: #000;
     margin: 0.5em;
-    transition: 0.3s;
-
-    &:hover {
-        transform: scale(1.05);
-    }
-
+    
     @media (max-width: 820px) {
         flex-basis: calc(50% - 1em);
     }
