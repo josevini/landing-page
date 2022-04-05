@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SectionBase = styled.section`
+export const MainSection = styled.section`
     width: 100%;
     height: 600px;
     display: flex;
@@ -13,7 +13,7 @@ export const SectionBase = styled.section`
     }
 `
 
-export const Content = styled.section`
+export const ContentSection = styled.section`
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -40,4 +40,20 @@ export const Description = styled.p`
 
 export const Image = styled.img`
     width: max(40vw, 360px);
+`
+
+export const Post = styled.article`
+    height: 300px;
+    flex-basis: calc(33% - 1em);
+    padding: 0.9375em;
+    color: #000;
+    margin: 0.5em;
+
+    @media (max-width: 820px) {
+        flex-basis: calc(50% - 1em);
+    }
+
+    @media (max-width: 650px) {
+        flex-basis: 350px;
+    }
 `
