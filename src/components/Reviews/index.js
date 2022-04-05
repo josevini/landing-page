@@ -1,7 +1,7 @@
 import React from 'react'
-import Person1 from '../../assets/person1.jpg'
-import Person2 from '../../assets/person2.jpg'
-import Person3 from '../../assets/person3.jpg'
+import photo1 from '../../assets/person1.jpg'
+import photo2 from '../../assets/person2.jpg'
+import photo3 from '../../assets/person3.jpg'
 import {
     Container,
     Content,
@@ -20,17 +20,17 @@ const Reviews = ({ id }) => {
             </Content>
             <ReviewsContent>
                 <ReviewsPost>
-                    <Photo src={Person1} />
+                    <Photo src={photo1} />
                     <Review>Minhas vendas aumentaram depois que passei a vender no e-commerce!</Review>
                     <h3>Sara</h3>
                 </ReviewsPost>
                 <ReviewsPost>
-                    <Photo src={Person2} />
+                    <Photo src={photo2} />
                     <Review>Ótimos atendimento e serviço! Super recomendo.</Review>
                     <h3>Clara</h3>
                 </ReviewsPost>
                 <ReviewsPost>
-                    <Photo src={Person3} />
+                    <Photo src={photo3} />
                     <Review>Muito bom, não tenho nada a reclamar, só agradecer pelo trabalho.</Review>
                     <h3>João</h3>
                 </ReviewsPost>
