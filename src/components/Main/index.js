@@ -1,12 +1,12 @@
 import React from 'react'
 import pc from '../../assets/pc.svg'
-import { Container } from './styles'
 import {
+    Container,
     Content,
     Title,
     Description,
     Image
-} from '../SectionBase/styles'
+} from './styles'
 
 const Main = () => {
     return (
