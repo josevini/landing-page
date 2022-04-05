@@ -1,7 +1,13 @@
 import styled from 'styled-components'
-import { SectionBase, Content, Image } from '../SectionBase/styles'
+import {
+    MainSection as MainSectionBase,
+    ContentSection as ContentSectionBase,
+    Title as TitleBase,
+    Description as DescriptionBase,
+    Image as ImageBase
+} from '../SectionBase/styles'
 
-export const Container = styled(SectionBase)`
+export const Container = styled(MainSectionBase)`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -9,11 +15,11 @@ export const Container = styled(SectionBase)`
     color: #fff;
 `
 
-export const TextContent = styled(Content)`
+export const TextContent = styled(ContentSectionBase)`
     text-align: center;
 `
 
-export const ContactContent = styled(Content)`
+export const ContactContent = styled(ContentSectionBase)`
     max-width: unset;
     width: 100%;
     display: flex;
@@ -26,12 +32,15 @@ export const ContactContent = styled(Content)`
     }
 `
 
-export const ContactImage = styled(Image)`
+export const ContactImage = styled(ImageBase)`
     width: max(25vw, 360px);
     @media (max-width: 820px) {
         display: none;
     }
 `
+export const Title = styled(TitleBase)``
+
+export const Description = styled(DescriptionBase)``
 
 export const Form = styled.form`
     display: flex;

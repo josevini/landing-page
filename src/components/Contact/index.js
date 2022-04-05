@@ -1,16 +1,17 @@
 import React from 'react'
+import contact from '../../assets/contact.svg'
 import {
     Container,
     TextContent,
     ContactContent,
     ContactImage,
+    Title,
+    Description,
     Form,
     Input,
     Message,
     Submit
 } from './styles'
-import contact from '../../assets/contact.svg'
-import { Title, Description } from '../SectionBase/styles'
 
 const Contact = ({ id }) => {
     return (
