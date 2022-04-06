@@ -40,6 +40,10 @@ export const Description = styled.p`
 
 export const Image = styled.img`
     width: max(40vw, 360px);
+    
+    @media (max-width: 360px) {
+        width: 100vw;
+    }
 `
 
 export const Post = styled.article`
